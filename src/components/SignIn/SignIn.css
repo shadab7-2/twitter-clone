@@ -1,0 +1,61 @@
+body{
+    background-color: gray;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+    margin-top: 40px;
+    width: 40%;
+    border-radius: 20px;
+}
+.twitter-icon{
+    color: rgb(29,155,240);
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.sign-in-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.button{
+    
+    background-color: white;
+    border-radius: 25px;
+    border: 0.5px solid gray;
+    width: 80%;
+    justify-content: center;
+}
+.sign-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 5px; */
+}
+.sign-icon{
+    margin: 3px;
+   
+}
+.form-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#filled-input{
+    border: 1px solid rgb(25,118,210);
+}
+.next-button{
+    background-color: black;
+    color: white;
+}
