@@ -1,7 +1,7 @@
 body{
     background-color: gray;
 }
-.main-container{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,18 +10,19 @@ body{
     margin-top: 40px;
     width: 40%;
     border-radius: 20px;
-}
-.twitter-icon{
-    color: rgb(29,155,240);
-}
-.container{
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 10px;
     gap: 10px;
+    min-height: 70%;
 }
-.sign-in-container{
+.twitter_icon{
+    color: rgb(29,155,240);
+}
+
+
+.signin_container{
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -36,26 +37,30 @@ body{
     width: 80%;
     justify-content: center;
 }
-.sign-button{
+.create_button{
+    border-radius: 25px;
+    border: 0.5px solid gray;
+    width: 80%;
+    padding: 10px;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.sign_button{
     display: flex;
     align-items: center;
     justify-content: center;
     /* padding: 5px; */
 }
-.sign-icon{
+.sign_icon{
     margin: 3px;
    
 }
-.form-container{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.login_button{
+    border: none;
+    color:rgb(29,155,240) ;
+    background-color: white;
 }
-#filled-input{
-    border: 1px solid rgb(25,118,210);
-}
-.next-button{
-    background-color: black;
-    color: white;
+.content{
+    font-size: smaller;
 }
