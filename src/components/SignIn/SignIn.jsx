@@ -5,15 +5,25 @@ import AppleIcon from "@mui/icons-material/Apple";
 import {TextField } from "@mui/material";
 import { Button } from "@mui/material";
 import styles from "./SignIn.module.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate ,Link} from "react-router-dom";
+import { useState } from "react";
 
 
 const SignIn = () => {
+  const[userData, setUserData] = useState([])
+
+  const handleInput = (e) =>{
+    e.preventDefault()
+     setUserData(e.target.value);
+     
+  }
   const navigate = useNavigate();
 
   const  handleClick = () =>{
-     navigate('/homepage')
+     localStorage.setItem('input',JSON.stringify(userData))
+     setUserData('') 
   }
+  console.log(userData)
   return (
     <div className={styles.main_container}>
       <div className={styles.container}>
@@ -36,11 +46,14 @@ const SignIn = () => {
 
           <form className={styles.form_container}>
             <TextField
+            onChange={handleInput}
+              value={userData}
               id="filled_input"
               label="Phone, email, or username"
               placeholder="Phone, email, or username"
               variant="filled"
             />
+            
 
             <Button 
             className={styles.next_button} 
@@ -57,7 +70,7 @@ const SignIn = () => {
               </Button>
           </form>
           <p>
-            Don't have an account?<button>Sign Up</button>
+            Don't have an account? <Link to ="/signup"><button>Sign Up</button></Link>
           </p>
         </div>
       </div>
