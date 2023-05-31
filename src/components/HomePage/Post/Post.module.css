@@ -23,13 +23,6 @@
     flex-direction: row;
     justify-content: space-around;
     padding: 5px;
-    align-items: center;
-}
-.posticon{
-    border: 0;
-    background-color: white;
-}
-.posticon :hover{
     background-color: lightgray;
 }
 .retweeticon{
