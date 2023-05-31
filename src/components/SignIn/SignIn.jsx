@@ -40,7 +40,8 @@ const SignIn = () => {
 
   const handleClick = (userData) => {
     console.log(userData)
-    const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+    console.log(emailRegex.test(userData))
     if (!userData || !emailRegex.test(userData)) {
       alert('You have entered an invalid email address!');
     } else {
