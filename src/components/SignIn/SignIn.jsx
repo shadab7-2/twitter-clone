@@ -10,13 +10,15 @@ import { TextField, IconButton, Input,InputAdornment, FilledInput, InputLabel, F
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { Button } from "@mui/material";
-
+//sahdabansari972@gmail.com
 
 const SignIn = () => {
   const[password , setPassword] = useState('')
-  
-  const userid = JSON.parse(localStorage.getItem("input"));
+  const[userData, setUserData] = useState([]);
   const [showPassword, setShowPassword] = useState(false);
+
+   /*const userid = JSON.parse(localStorage.getItem("input"));*/
+  
 
   const handleClickShowPassword = () => {
     setShowPassword(!showPassword);
@@ -25,8 +27,7 @@ const SignIn = () => {
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
   };
-  const[userData, setUserData] = useState([]);
-  console.log(userData);
+  
 
   const handleInput = (e) =>{
         e.preventDefault()
@@ -38,14 +39,16 @@ const SignIn = () => {
   localStorage.setItem('input', JSON.stringify(userData));
 
   const handleClick = (userData) => {
-    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (typeof userData === 'string' && userData.match(emailRegex)) {
-      navigate('/homepage');
-      setUserData(''); 
-    } else {
+    console.log(userData)
+    const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!userData || !emailRegex.test(userData)) {
       alert('You have entered an invalid email address!');
+    } else {
+      navigate('/homepage');
+      setUserData('');
     }
   };
+  
   console.log(userData)
   return (
     <div className={styles.main_container}>
@@ -102,7 +105,7 @@ const SignIn = () => {
             variant="contained "
             style={{backgroundColor:"black", color: "white"}}
             onClick={handleClick}
-            >Next</Button>
+            >Log In</Button>
 
             <Button 
             className={styles.forgot_button} 
