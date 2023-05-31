@@ -1,0 +1,51 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: .5px solid gray;
+    margin: 20px;
+    padding: 10px;
+}
+.userInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.description{
+    display: flex;
+}
+.image{
+    height: 300px;
+    width: 400px;
+}
+.Posticons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    align-items: center;
+}
+.posticon{
+    border: 0;
+    background-color: white;
+}
+.posticon :hover{
+    background-color: lightgray;
+}
+.retweeticon{
+    background-color: white;
+    border: 0;
+    justify-content: center;
+}
+.retweeticon:hover{
+    background-color: lightblue;
+    border-radius: 15px;
+}
+.hearticon{
+    background-color: white;
+    border: 0;
+    border-radius: 15px;
+}
+.hearticon:hover{
+    background-color: red;
+}
