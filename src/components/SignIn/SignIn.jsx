@@ -2,27 +2,53 @@ import React from "react";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GoogleIcon from "@mui/icons-material/Google";
 import AppleIcon from "@mui/icons-material/Apple";
-import {TextField } from "@mui/material";
-import { Button } from "@mui/material";
 import styles from "./SignIn.module.css";
 import { useNavigate ,Link} from "react-router-dom";
 import { useState } from "react";
 
+import { TextField, IconButton, Input,InputAdornment, FilledInput, InputLabel, FormControl } from '@mui/material';
+import Visibility from '@mui/icons-material/Visibility';
+import VisibilityOff from '@mui/icons-material/VisibilityOff';
+import { Button } from "@mui/material";
+//sahdabansari972@gmail.com
 
 const SignIn = () => {
-  const[userData, setUserData] = useState([])
+  const[password , setPassword] = useState('')
+  const[userData, setUserData] = useState([]);
+  const [showPassword, setShowPassword] = useState(false);
+
+   /*const userid = JSON.parse(localStorage.getItem("input"));*/
+  
+
+  const handleClickShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
+  const handleMouseDownPassword = (event) => {
+    event.preventDefault();
+  };
+  
 
   const handleInput = (e) =>{
-    e.preventDefault()
+        e.preventDefault()
      setUserData(e.target.value);
      
   }
   const navigate = useNavigate();
 
-  const  handleClick = () =>{
-     localStorage.setItem('input',JSON.stringify(userData))
-     setUserData('') 
-  }
+  localStorage.setItem('input', JSON.stringify(userData));
+
+  const handleClick = (userData) => {
+    console.log(userData)
+    const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!userData || !emailRegex.test(userData)) {
+      alert('You have entered an invalid email address!');
+    } else {
+      navigate('/homepage');
+      setUserData('');
+    }
+  };
+  
   console.log(userData)
   return (
     <div className={styles.main_container}>
@@ -53,14 +79,33 @@ const SignIn = () => {
               placeholder="Phone, email, or username"
               variant="filled"
             />
-            
+             <FormControl sx={{ m: 1, width: '25ch' }} variant="filled">
+          <InputLabel htmlFor="filled-adornment-password">Password</InputLabel>
+          <FilledInput
+            id="filled-adornment-password"
+            type={showPassword ? 'text' : 'password'}
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton
+                  aria-label="toggle password visibility"
+                  onClick={handleClickShowPassword}
+                  onMouseDown={handleMouseDownPassword}
+                  edge="end"
+                  onChange={(e) => {setPassword(e.target.value)}}
+                >
+                  {showPassword ? <VisibilityOff /> : <Visibility />}
+                </IconButton>
+              </InputAdornment>
+            }
+          />
+        </FormControl>
 
             <Button 
             className={styles.next_button} 
             variant="contained "
             style={{backgroundColor:"black", color: "white"}}
             onClick={handleClick}
-            >Next</Button>
+            >Log In</Button>
 
             <Button 
             className={styles.forgot_button} 
@@ -76,6 +121,6 @@ const SignIn = () => {
       </div>
     </div>
   );
-};
+}
 
 export default SignIn;
