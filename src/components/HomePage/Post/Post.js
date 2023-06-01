@@ -4,7 +4,7 @@ import styles from "./Post.module.css";
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import CachedOutlinedIcon from '@mui/icons-material/CachedOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import {MdOutlinePoll} from "react-icons/md";
+import PollIcon from '@mui/icons-material/Poll';
 import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
 
 
@@ -28,7 +28,7 @@ const Post = () => {
               <button className={styles.posticon}><ChatBubbleOutlineOutlinedIcon/> </button>
               <button className={styles.retweeticon}><CachedOutlinedIcon/> </button>
             <button className={styles.hearticon}><FavoriteBorderOutlinedIcon/> </button>
-              <button className={styles.posticon}><MdOutlinePoll/> </button>
+              <button className={styles.posticon}><PollIcon/> </button>
               <button className={styles.posticon}><FileUploadOutlinedIcon/> </button>
               
           </div>
