@@ -6,10 +6,10 @@ import { TextField } from '@mui/material';
 // import Visibility from '@mui/icons-material/Visibility';
 // import VisibilityOff from '@mui/icons-material/VisibilityOff';
 // import './Register.module.css'
-import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+// import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+// import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+// import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+// import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import {Link} from 'react-router-dom'
 const Register = () => {
 //     const navigate=useNavigate();
@@ -39,13 +39,13 @@ const Register = () => {
           <p>
           This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.
           </p>
-          <div className={styles.date_container}>
+          {/* <div className={styles.date_container}>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
       <DemoContainer components={['DatePicker']}>
         <DatePicker label="Basic date picker" />
       </DemoContainer>
     </LocalizationProvider> 
-          </div>
+          </div> */}
         </div>
         <button className={styles.register_button}>Register</button>
           </div>
