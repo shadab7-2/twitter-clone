@@ -1,0 +1,13 @@
+.follow{
+    background-color: aliceblue;
+    margin-left: 60%;
+    margin-right:15%;
+    border-radius: 15px;
+}
+.heading{
+    display: flex;
+    justify-content: start;
+    margin-left: 15%;
+    font-size: x-large;
+    
+}

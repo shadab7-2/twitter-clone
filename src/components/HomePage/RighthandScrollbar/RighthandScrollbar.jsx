@@ -26,7 +26,7 @@ export function RightHandScrollBar(){
         
         id:3,
         topic:"Trending in India",
-        tagName:"#modi_Go_back",
+        tagName:"#Volvo X90",
         tweetCount:128000
 },
 {
@@ -61,7 +61,7 @@ const data2=[
             
             id:3,
             topic:"Trending in India",
-            tagName:"#modi_Go_back",
+            tagName:"#Volvo X90",
             tweetCount:128000
     },
     {
@@ -95,7 +95,7 @@ const data2=[
     },{
         id:9,
         topic:"Trending in India",
-        tagName:"#BrijbhushanSingh",
+        tagName:"#Cyber Crime",
         tweetCount:3093
     },{
         id:10,
@@ -119,10 +119,10 @@ function handleClick(){
     return(
     <div className={styles.containers}>
         
-        
+        <input placeholder="  Search" className={styles.input} type="search"></input>
 
         
-        <h2><strong style={{marginLeft:"70%"}}>What's Happening</strong></h2>
+        <h2><strong >What's Happening</strong></h2>
         
         <div className={styles.feed_container}>
         {data.map((item,index)=>{

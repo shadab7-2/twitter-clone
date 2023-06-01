@@ -2,6 +2,15 @@
     display: flex;
     align-items: start;
     flex-direction: column;
-    margin-left: 80%;
+    margin-left: 30%;
     
+}
+.strong:hover{
+    color: rgb(29,155,240);
+    cursor: pointer;
+    background-image: linear-gradient(white,pink);
+    border-radius: 5px;
+    
+
+
 }
