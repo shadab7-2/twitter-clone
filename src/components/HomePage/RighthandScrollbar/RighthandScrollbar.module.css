@@ -1,0 +1,30 @@
+.Showbutton{
+    
+    border: none;
+    background-color: transparent;
+    color:rgb(29,155,240);
+
+}
+.Showbutton:hover{
+    color: brown;
+}
+
+.input{
+    background-color: rgb(238, 235, 235);
+    height: 30px;
+    border: .5px solid rgb(29,155,240);
+    border-radius: 15px;
+    width:50%;
+    margin-top:10px;
+
+}
+.Card{
+    gap: 10px;
+}
+.containers{
+    border:1px solid;
+    margin-left:60%;
+    margin-right: 15%;
+    background-color: aliceblue;
+    border-radius:30px;    
+}
