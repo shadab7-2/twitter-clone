@@ -1,9 +1,30 @@
+
 .container{
-    background-color: white;
     display: flex;
-    flex:start;
-    justify-content: flex-start;
+    flex: .7;
+    background-color: white;
+    border: 1px solid gray;
+    
+   
 }
 .sidenavbar{
     display: flex;
+    flex: .2;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+.content{
+    display: flex;
+    
+    flex-direction: row;
+    border: 1px solid gray;
+    margin-left: 35% ;
+}
+.rightsidebar{
+    width: 50%;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }

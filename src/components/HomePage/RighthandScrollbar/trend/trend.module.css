@@ -1,16 +1,26 @@
 .container{
     display: flex;
+    gap: 10px;
     align-items: start;
     flex-direction: column;
-    margin-left: 30%;
+    margin-left: 10%;
     
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+}
+.container:hover{
+    background-color: lightgray;
 }
 .strong:hover{
     color: rgb(29,155,240);
     cursor: pointer;
     background-image: linear-gradient(white,pink);
     border-radius: 5px;
-    
-
-
+}
+.strong{
+    font-weight: bolder;
 }

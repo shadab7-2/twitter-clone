@@ -1,0 +1,61 @@
+
+.main_container{
+    /* width: 50%; */
+    border: 0.1px solid rgb(156, 153, 153);
+    /* margin-left: 200px; */
+    /* margin-top: 20px; */
+    background-color: rgb(255, 253, 253);
+}
+.tabContainer{
+    background-color: white;
+    display: flex;
+    /* height: 60px; */
+}
+.tabItem{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(255, 253, 253);
+    justify-content: space-around;
+
+}
+.tabItem:hover{
+    background-color: grey;
+    font-weight: bold;
+    color: white;
+}
+.active{
+    /* height: 50%; */
+    display: inline-block;
+    border-bottom: 4px solid rgb(29,155,240);
+}
+.profile{
+    display: flex;
+    /* height: 50%; */
+    /* width: 50%; */
+}
+.image_avatar{
+    color: aquamarine;
+}
+.allIcon{
+    display: flex;
+    padding: 15px;
+    cursor: pointer;
+}
+.allIcon>svg{
+    padding: 10px;
+}
+.tweet_btn{
+    display: flex;
+    /* margin-left: 600px; */
+}
+.input_text{
+    border: none;
+    background-color:  rgb(255, 253, 253);
+    font-size: 20px;
+}
+.drop{
+    
+}

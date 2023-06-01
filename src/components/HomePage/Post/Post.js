@@ -22,7 +22,7 @@ const Post = () => {
           </div>
            <div className = {styles.img_dis}> 
            <p className={styles.description}>{post.description}</p>
-          <img src={post.imageUrl} alt="Post" className={styles.image} />
+          <img src={post.imageUrl} alt="Post" className={styles.postimage} />
            </div>
           <div className= {styles.Posticons}>
               <button className={styles.posticon}><ChatBubbleOutlineOutlinedIcon/> </button>

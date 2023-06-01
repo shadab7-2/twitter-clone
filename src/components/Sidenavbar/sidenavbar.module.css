@@ -8,6 +8,7 @@
     width: 30%;
     height: auto;
     border-radius: 20px;
+    position: fixed;
 }
 .inner_container{
 margin: auto;
@@ -27,22 +28,23 @@ margin: auto;
         align-items: center;
        /* justify-content: center; */
        color: black;
-       background: 0;
+       background-color:white;
        border: 0;
        margin: 5px 10px 5px 10px;
        padding: 5px 10px 5px 10px;
-       border-radius: 15px;
+       border-radius: 20px;
        width: 100%;
        font-size: medium;
     }
     .sidenav__button:hover{
         cursor: pointer;
-        background-color: rgba(255, 225, 225, 0.128);
+        background-color: lightgray;
       }
        .sidenav__button > span{
         font-size: 18px;
         font-weight: bolder;
         margin: 10px;
+        
     } 
     .tweet_button{
         border: 1px solid white;
@@ -57,3 +59,7 @@ margin: auto;
         font-size: larger;
 
     }
+.tweet_button:hover{
+    background-color: rgb(66, 194, 241);
+
+}

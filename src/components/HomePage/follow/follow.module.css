@@ -1,13 +1,16 @@
 .follow{
     background-color: aliceblue;
-    margin-left: 60%;
-    margin-right:15%;
+    /* margin-left: 60%;
+    margin-right:15%; */
     border-radius: 15px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 350px;
 }
 .heading{
     display: flex;
     justify-content: start;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     font-size: x-large;
     
 }

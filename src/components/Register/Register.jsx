@@ -47,7 +47,8 @@ const Register = () => {
     </LocalizationProvider> 
           </div> */}
         </div>
-        <button className={styles.register_button}>Register</button>
+        <Link to = "/homepage"><button className={styles.register_button}>Register</button> </Link>
+        
           </div>
           <p>Already Have an Account?<Link to="/"><button className={styles.signin_button}>Sign In</button> </Link> </p>
         </div>

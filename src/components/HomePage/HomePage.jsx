@@ -7,17 +7,44 @@ import styles from "./HomePage.module.css";
 
 import { RightHandScrollBar } from './RighthandScrollbar/RighthandScrollbar'
 
-import { Follow } from './follow/follow'
+import { Follow } from './follow/follow';
+import Middle from './TweetInput/Middle';
 
 const HomePage = () => {
   return (
-    <div>
-      <h1> This is our home HomePage</h1>
+    <div className={styles.container}>
+      
+      <div className={styles.leftsidebar}>
       <Sidenavbar/>
-      <WhoToFollw/>
-      <RightHandScrollBar/>
-      <Post/>
-      <Follow/>
+      </div>
+
+      <div className={styles.content}>
+        
+        <div className={styles.post}>
+          <h1>Home</h1>
+           <Middle/>
+           <Post/>
+        </div>
+
+        <div className={styles.rightsidebar}>
+          {/* <div className={styles.search}>
+
+          </div> */}
+          <div className={styles.trending}>
+            <RightHandScrollBar/>
+          </div>
+          <div className= {styles.whotofollow}>
+            <Follow/>
+          </div>
+        </div>
+
+      </div>
+      
+      
+      {/* <WhoToFollw/> */}
+      
+      
+      
     </div>
     )
 }

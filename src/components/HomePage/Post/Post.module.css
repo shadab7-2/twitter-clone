@@ -5,6 +5,7 @@
     border: .5px solid gray;
     margin: 20px;
     padding: 10px;
+    width: 450px;
 }
 .userInfo{
     display: flex;
@@ -14,7 +15,8 @@
 .description{
     display: flex;
 }
-.image{
+.postimage{
+    border: 1px solid gray;
     height: 300px;
     width: 400px;
 }
