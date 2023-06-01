@@ -28,10 +28,10 @@ const SignUp = () => {
             </span>
           </button>
 
-          <button className={styles.create_button}>
-         
+          <Link to ='/register'><button className={styles.create_button}>
+      
           Create Account
-          </button>
+          </button></Link>
 
            <p className={styles.content}>
             By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use.</p>

@@ -1,10 +1,11 @@
 import React from 'react'
-
+import Sidenavbar from '../Sidenavbar/Sidenavbar'
 const HomePage = () => {
   return (
     <div>
-      <h1> This is our home HomePage</h1>
-    </div>
+      
+      <Sidenavbar/>
+ </div>
   )
 }
 
