@@ -1,0 +1,9 @@
+.container{
+    background-color: white;
+    display: flex;
+    flex:start;
+    justify-content: flex-start;
+}
+.sidenavbar{
+    display: flex;
+}
