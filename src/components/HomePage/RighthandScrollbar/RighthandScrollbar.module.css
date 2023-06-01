@@ -1,0 +1,22 @@
+.Showbutton{
+    margin-left: 65%;
+    border: none;
+    background-color: transparent;
+    color:rgb(29,155,240);
+
+}
+.Showbutton:hover{
+    color: brown;
+}
+
+.input{
+    background-color: rgb(238, 235, 235);
+    height: 30px;
+    border: .5px solid rgb(29,155,240);
+    border-radius: 15px;
+    width:15%;
+
+}
+.Card{
+    gap: 10px;;
+}
