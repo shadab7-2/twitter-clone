@@ -1,9 +1,11 @@
 import React from 'react'
+import Middle from '../HomePage/TweetInput/Middle'
+import styles from "./Wthpn.module.css";
 
 const Wthpn = () => {
   return (
-    <div>
-      This is what's happening page
+    <div className={styles.container}>
+      <Middle/>
     </div>
   )
 }

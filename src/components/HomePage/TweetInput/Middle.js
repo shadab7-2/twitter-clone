@@ -11,7 +11,7 @@ import PendingActionsIcon from '@mui/icons-material/PendingActions';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Button from '@mui/material/Button';
 import SplitButton from './Dropdown';
-
+import {Link} from "react-router-dom"
 
 
 
@@ -33,14 +33,16 @@ function Middle() {
             </div>
             <hr></hr>
             <div className={styles.profile}>
-                <Stack direction="row" spacing={2}>
+                <Stack direction="row" spacing={2} className={styles.inputcontainer}>
                     <Avatar style={{height:"65px",width:"65px",marginLeft:"10px"}} className={styles.image_avatar} alt="Remy Sharp" src="https://w0.peakpx.com/wallpaper/100/128/HD-wallpaper-don-2-bollywood-movie-srk-thumbnail.jpg" />
                     <SplitButton style = {{height:"100px"}}  className={styles.drop}/>
                     <input
                     type='text'
                     placeholder='What is Happening?!'
                     className={styles.input_text}
-                    ></input>
+                    >
+
+                    </input>
                 </Stack>
 
 
@@ -53,7 +55,8 @@ function Middle() {
                 <PendingActionsIcon />
                 <LocationOnIcon />
                 <Stack spacing={2} direction="row">
-                    <Button  className={styles.tweet_btn} variant="contained">Tweet</Button>
+                    <Link to = "/homepage"><Button   className={styles.tweet_btn} variant="contained">Tweet</Button> </Link>
+                    
                 </Stack>
 
             </div>

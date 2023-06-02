@@ -17,14 +17,17 @@
 }
 .postimage{
     border: 1px solid gray;
-    height: 300px;
-    width: 400px;
+  width: 100%; /* Adjust the width as needed */
+  height: auto; /* Adjust the height as needed */
+  object-fit: cover;
+  z-index: 1;
 }
-.Posticons{
+.posticons{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: white;
+    border: 0;
     padding: 5px;
 }
 .retweeticon{
@@ -34,13 +37,21 @@
 }
 .retweeticon:hover{
     background-color: lightblue;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 .hearticon{
     background-color: white;
     border: 0;
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 .hearticon:hover{
-    background-color: red;
+    background-color:deeppink;
+}
+.posticon{
+    background-color: white;
+    border: 0;
+}
+.posticon:hover{
+ cursor: pointer;
+ background-color: lightblue;
 }
