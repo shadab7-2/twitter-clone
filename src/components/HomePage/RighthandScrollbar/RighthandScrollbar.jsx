@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import styles from "./RighthandScrollbar.module.css"
 import { Trend } from "./trend/trend"
-
+// import SearchIcon from '@mui/icons-material/Search';
 
 
 
@@ -118,8 +118,11 @@ function handleClick(){
 }
     return(
     <div className={styles.containers}>
-        
-        <input placeholder="  Search" className={styles.input} type="search"></input>
+        <div className ={styles.searchbar}>
+            {/* <SearchIcon/> */}
+        <input placeholder=  "Search" className={styles.inputsearch} type="search"></input>
+        </div>
+       
 
         
         <h2><strong >What's Happening</strong></h2>
